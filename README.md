@@ -45,7 +45,7 @@ Then:
 
 If your version of curl does not support sftp and you wish to use the tools in this repository to deploy, you will have to use a version of curl that does support it. For OSX users, the verification script used brew to take care of that problem. For users of other operating systems, check your online support communities. 
 
-Now edit the `fabfile.py` and adjust the settings for your project.
+Now edit the `fabfile.py` and adjust the settings for your project. Many commands will not work if the project does not have a name.
 
 ## Usage
 

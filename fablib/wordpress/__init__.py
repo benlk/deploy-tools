@@ -61,7 +61,13 @@ def verify_prerequisites():
             local('brew install git-ftp')
         else:
             print(colors.green('You have git-ftp installed!'))
-
+            
+        print(colors.cyan('Making sure that the project name is set'))
+        if env.project_name == '':
+            print(colors.red('Your project name has not been set.\nConfigure your project in fabfile.py'))
+        else:
+            print(colors.green('Project name is: ' + env.project_name))
+        
         print(colors.green('Your system is ready to deploy code!'))
 
 
